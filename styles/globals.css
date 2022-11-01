@@ -1,26 +1,73 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Bold.eot');
+    src: local('Aeroport Bold'), local('Aeroport-Bold'),
+    url('../assets/fonts/Aeroport-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Aeroport-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Aeroport-Bold.woff') format('woff'),
+    url('../assets/fonts/Aeroport-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport.eot');
+    src: local('Aeroport'),
+    url('../assets/fonts/Aeroport.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Aeroport.woff2') format('woff2'),
+    url('../assets/fonts/Aeroport.woff') format('woff'),
+    url('../assets/fonts/Aeroport.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../assets/fonts/Aeroport-Medium.eot');
+    src: local('Aeroport Medium'), local('Aeroport-Medium'),
+    url('../assets/fonts/Aeroport-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Aeroport-Medium.woff2') format('woff2'),
+    url('../assets/fonts/Aeroport-Medium.woff') format('woff'),
+    url('../assets/fonts/Aeroport-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@font-face {
+    font-family: 'Squartiqa4FUltraLight';
+    src: url('../assets/fonts/Squartiqa4FUltraLight.eot');
+    src: local('☞Squartiqa 4F UltraLight'), local('Squartiqa4FUltraLight'),
+    url('../assets/fonts/Squartiqa4FUltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Squartiqa4FUltraLight.woff2') format('woff2'),
+    url('../assets/fonts/Squartiqa4FUltraLight.woff') format('woff'),
+    url('../assets/fonts/Squartiqa4FUltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Squartiqa4F';
+    src: url('../assets/fonts/Squartiqa4F.eot');
+    src: local('☞Squartiqa 4F'), local('Squartiqa4F'),
+    url('../assets/fonts/Squartiqa4F.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Squartiqa4F.woff2') format('woff2'),
+    url('../assets/fonts/Squartiqa4F.woff') format('woff'),
+    url('../assets/fonts/Squartiqa4F.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
